@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import Notfound from './Notfound/Notfound';
 import ChartWrapper from './ChartWrapper/ChartWrapper';
 
-/** EchartLine representing Line Graph */
+/** Main Component with Routing */
  class Main extends Component {
 	render() {
 		return (

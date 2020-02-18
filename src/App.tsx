@@ -4,7 +4,7 @@ import Sidedrawer from './components/Sidedrawer/Sidedrawer';
 import Main from './containers/Main/Main';
 import { BrowserRouter } from 'react-router-dom';
 
-/** EchartLine representing Line Graph */
+/** Main App Component */
 function App() {
   return (
     <BrowserRouter>

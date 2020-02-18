@@ -5,7 +5,7 @@ import classes from "./Menu.module.css";
 /**
  * Menu Component - Stateless
  * @function 
- * @name sidedrawer
+ * @name menu
  * @param {any} props
  */
 const menu = (props: any) => {
