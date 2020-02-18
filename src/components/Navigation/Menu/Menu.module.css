@@ -1,0 +1,28 @@
+.Nav {
+	max-height: 300px;
+}
+.Menu{
+	padding-left: 0;
+}
+.Menu li {
+	list-style: none;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+
+.Menu a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.Menu a:hover,
+.Menu a:active,
+.Menu a.active {
+	color: #C25552;
+}
+
+.active {
+	color: #C25552;
+}
+
