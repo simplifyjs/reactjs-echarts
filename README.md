@@ -1,20 +1,15 @@
-## Use EChart in React JS
+## Use ECharts in React JS
 
-## Prerequisite
+## Reference
 - See [Node JS](https://nodejs.org/en/)
+- See [React JS](https://reactjs.org/)
+- See [ECharts](https://www.echartsjs.com/en/index.html)
 
-1. In the project directory, you can run:
-2. Download the project compress file named react-typescript.tar.gz
-3. Open linux terminal
-4. `type in the terminal this to unzip the compress file`
-5. `tar -xvf react-typescript.tar.gz`
-6. `cd react-typescript`
-7. `npm i`
-
-## Run the application
-`npm run start`
-
-Enjoy!
+## Chart Sample
+- Bar Stack
+- Line Graph
+- Bar Graph Animation
+## Enjoy!
 
 ## Author
-* **Ann G.** ⊂(・﹏・⊂) [Simplify JS](http://simplifyjs.com)
+* **Ann G** ⊂(・﹏・⊂) [Simplify JS](http://simplifyjs.com)
