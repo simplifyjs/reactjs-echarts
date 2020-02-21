@@ -4,7 +4,7 @@
  */
 export interface VolumeDataItems {
 	chartVolume: number[];
-	xAxisData: number[];
+	chartTs: number[];
 }
 
 /**

@@ -44,7 +44,7 @@ class EchartBarAnimation extends Component {
 			},
 			tooltip: {},
 			xAxis: {
-					data: volumeData.xAxisData,
+					data: volumeData.chartTs,
 					splitLine: {
 							show: false
 					}
@@ -79,17 +79,11 @@ class EchartBarAnimation extends Component {
 	 */
 		axios.get(this.CHARTDATA_ENDPOINT)
 			.then(jsonRes => {
-				let xAxisData = [],
-						chartTs = jsonRes.data.volume.map((item: { ts: String; }) => moment(+item.ts).format("MMM D")),
-						chartVolume = jsonRes.data.volume.map((item: { volume: Number; }) => item.volume);  
+				let	chartTs = jsonRes.data.volume.map((item: { ts: String; }) => moment(+item.ts).format("MMM D"));
+			  let chartVolume = jsonRes.data.volume.map((item: { volume: Number; }) => item.volume);  
 
-				for (var i = 0; i < chartTs.length; i++) {
-					xAxisData.push(chartTs[i]);
-					chartVolume.push((Math.cos(i / 5) * (i / 5 -10) + i / 6) * 5);
-				}
-
-				let option =  this.setChartOption({chartVolume, xAxisData});
-					echartConfig.setOption((option as any));
+				let option =  this.setChartOption({chartVolume, chartTs});
+				echartConfig.setOption((option as any));
 			})
 			.catch(err => console.log(err));
 		}
